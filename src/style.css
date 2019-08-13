@@ -1,0 +1,125 @@
+body{
+    /* background: url(img/fondo.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+   
+ 
+    /* background-position: center; 
+   
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    display: flex; /*COMENTAR*/
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */ 
+}
+
+.ventana{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(64, 187, 125, 0.589);
+  border-radius: 10px;
+  padding: 17px;
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow:25px 24px 24px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow:25px 24px 24px -9px rgba(0,0,0,0.75);
+  box-shadow: 25px, 24px 24px -9px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 1024px){
+  .ventana{
+      width: 70%;
+      left: 48%;
+      position: absolute;
+      margin: 5% 0 5% 0;
+  }
+}
+
+.caja-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40%;
+    width: 80%;
+}
+
+.grupo{
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .caja-grupo{
+    display: flex;
+    width: 100%;
+  }
+
+  .caja-grupo > span{
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    line-height: 40px;
+  }
+  
+  .grupo-boton{
+    width: 100%;
+    height: 50px;
+    margin-top: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grupo-boton > button{
+    margin:10px;
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    background:  #026b48;
+    background: -webkit-linear-gradient(to top, #002c16, #05a54d);  
+    background: linear-gradient(to top,  #002c16, #05a54d);
+    color: white;
+    border: 2px solid #002c16;
+    cursor: pointer;
+  
+    -webkit-box-shadow: 14px 13px 29px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 13px 29px -6px rgba(0,0,0,0.75);
+    box-shadow: 14px 13px 29px -6px rgba(0,0,0,0.75);
+    transition: all 1s;
+  }
+  
+  .grupo-boton > button:hover{
+    color: white;
+    background: #224e29;
+  }
+  
+  @media only screen and (max-width: 1024px){
+    .grupo-boton > button{
+        width: 50%;
+        height: 50px;
+    }
+  }
+  
+
+  .icono{
+    width: 15%;
+    height: 45px; 
+  }
+
+  .opcion{
+    text-align: center;
+  }
+
+  .registro{
+    text-align: center;
+  }
