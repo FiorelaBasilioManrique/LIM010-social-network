@@ -89,6 +89,8 @@ A continuación te proporcionamos el layout (diseño) de la vista mobile y deskt
 
 ### Soft
 - [ ] Comunicacion
+    - Mejorar cuando me expreso teniendo más seguridad de mi misma y en lo que quiero transmitir.
+    - Explicando mi codigo a mis compañeras y acercarme a las coaches.
 
 ### DOM y Web APIs
 - [ ] Manipulación dinámica del DOM
