@@ -1,26 +1,48 @@
+*{
+  margin:0;
+  padding: 0;
+  border: 0px;
+}
+
 body{
-    /* background: url(img/fondo.png); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
-   
- 
-    /* background-position: center; 
-   
-    background-size: cover;
-    margin: 0px;
-    padding: 0px;
-    display: flex; /*COMENTAR*/
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center; */ 
+  /* background: url(img/mundo.png); */
+  /* background-repeat: no-repeat;
+  background-position: center; 
+  background-attachment: fixed;
+  background-size: cover; */
+
+  background-color: rgb(216, 216, 219);
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  display: flex; /*COMENTAR*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Signika', sans-serif;
+}
+
+.fondog{
+  width: 50%;
+  height: 100%;
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+@media only screen and (max-width: 1024px){
+  .fondog{
+    
+    width: 60%;
+    margin: 5% 0 5% 0;
+  }
 }
 
 .ventana{
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: rgba(64, 187, 125, 0.589);
+  background: rgba(54, 180, 142, 0.596);
   border-radius: 10px;
   padding: 17px;
   width: 400px;
@@ -36,90 +58,141 @@ body{
 
 @media only screen and (max-width: 1024px){
   .ventana{
-      width: 70%;
-      left: 48%;
-      position: absolute;
+      width: 60%;
       margin: 5% 0 5% 0;
   }
 }
 
-.caja-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 40%;
-    width: 80%;
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
 }
 
 .grupo{
-    flex-direction: column;
-    padding: 10px;
-    width: 100%;
-    margin-top: 8px;
-  }
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  margin-top: 8px;
+}
 
-  .caja-grupo{
-    display: flex;
-    width: 100%;
-  }
+.caja-grupo{
+  display: flex;
+  width: 100%;
+  margin: 15px 0 15px 0;
+}
 
-  .caja-grupo > span{
-    height: 40px;
-    width: 80px;
-    text-align: center;
-    line-height: 40px;
-  }
-  
-  .grupo-boton{
-    width: 100%;
-    height: 50px;
-    margin-top: -2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+.caja-grupo > span{
+  height: 40px;
+  width: 50px;
+  text-align: center;
+  line-height: 40px;
+  margin: 2px 5px 2px 2px;
+  border: 2px solid #050505;
+  background: -webkit-linear-gradient(to right, rgb(5, 99, 55), rgb(144, 243, 122));
+  background: linear-gradient(to right, rgb(5, 99, 55), rgb(144, 243, 122));
+
+}
+
+input{
+  width: 100%;
+  padding: 12px 20px;
+  outline: none;
+  background: rgba(57, 57, 59, 0.431);
+  color: white;
+}
+
+input:focus{
+  border: 2px solid rgb(0, 136, 109);
+}
+
+.grupo-boton{
+  width: 100%;
+  height: 50px;
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grupo-boton > button{
+  margin:10px;
+  width: 30%;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  background:  #065811;
+  background: -webkit-linear-gradient(to top, #014214, #019b46);  
+  background: linear-gradient(to top, #014214, #019b46);
+  color: white;
+  border: 2px solid #224e2c;
+  cursor: pointer;
+
+  -webkit-box-shadow: 14px 13px 29px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 14px 13px 29px -6px rgba(0,0,0,0.75);
+  box-shadow: 14px 13px 29px -6px rgba(0,0,0,0.75);
+  transition: all 1s;
+}
+
+.grupo-boton > button:hover{
+  color: white;
+  background: #224e2c;
+}
+
+@media only screen and (max-width: 1024px){
   .grupo-boton > button{
-    margin:10px;
-    width: 30%;
-    height: 40px;
-    border-radius: 5px;
-    outline: none;
-    background:  #026b48;
-    background: -webkit-linear-gradient(to top, #002c16, #05a54d);  
-    background: linear-gradient(to top,  #002c16, #05a54d);
-    color: white;
-    border: 2px solid #002c16;
-    cursor: pointer;
-  
-    -webkit-box-shadow: 14px 13px 29px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: 14px 13px 29px -6px rgba(0,0,0,0.75);
-    box-shadow: 14px 13px 29px -6px rgba(0,0,0,0.75);
-    transition: all 1s;
+      width: 50%;
+      height: 50px;
   }
-  
-  .grupo-boton > button:hover{
-    color: white;
-    background: #224e29;
-  }
-  
-  @media only screen and (max-width: 1024px){
-    .grupo-boton > button{
-        width: 50%;
-        height: 50px;
-    }
-  }
-  
+}
 
-  .icono{
-    width: 15%;
-    height: 45px; 
-  }
 
-  .opcion{
-    text-align: center;
-  }
+.mensaje{
+  background: rgb(235, 184, 136);
+  width: 105%;
+  color: rgb(158, 48, 4);
+  font-size: 20px;
+  margin-top: 100px;
+  text-align: center;
+}
 
-  .registro{
-    text-align: center;
+.hide{
+  display: none;
+}
+
+::placeholder{
+  color: rgb(195, 192, 204);
+}
+
+.logo{
+  position: absolute;
+  height: 200px;
+  margin-top:  -40px;
+}
+
+@media only screen and (max-width: 1024px){
+  .logo{
+      width: 80%;
+      height: 150px;
+      margin-top:  -75px;
   }
+}
+
+.icono{
+  width: 15%;
+  height: 45px; 
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.opcion{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.registro{
+  margin-top: 10px;
+  text-align: center;
+}

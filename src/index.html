@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Social Network</title>
   <link rel="stylesheet" href="style.css">
-   <!--Iconos-->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-   integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!--Iconos-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+
 <body>
-  <div class="container">
-   <!--Inicio login-->
+
+  <!--Inicio login-->
+
+  <div>
+    <img class="fondog" src="img/mundo.png" alt="">
+  </div>
 
   <div class="ventana" id="login">
-      <img class="logo galerias-principa"  src="img/logo.png" alt="">
+    <img class="logo galerias-principa" src="img/logo.png" alt="">
 
 
-  <div class="caja-container">
+    <div class="container">
 
-    <!-- Mensaje de No Ingresar-->
-    <!-- <div class="mensaje" id="mensaje"></div> -->
-    <!--Fin de No Ingresar -->
+      <!--Mensaje de No Ingresar-->
+      <div class="mensaje" id="mensaje"></div>
+      <!--Fin de No Ingresar-->
 
-    <div class="grupo">
-      <label for="email">Email:</label>
-      <div class="caja-grupo">
-         <span><i class="fas fa-user"></i></span> 
-        <input type="text" name="Email" id="email" placeholder="Email" value="">
+      <div class="grupo">
+        <label for="usuario">Email:</label>
+        <div class="caja-grupo">
+          <span><i class="fas fa-user"></i></span>
+          <input type="text" name="Email" id="correo" placeholder="Email" value="">
+        </div>
       </div>
-    </div>
 
-    <div class="grupo">
-      <label id="clavecon">Password:</label>
-      <div class="caja-grupo">
-        <span><i class="fas fa-key"></i></span> 
-        <input type="password" name="Password" id="password" placeholder="Password" value="">
+      <div class="grupo">
+        <label id="clavecon">Password:</label>
+        <div class="caja-grupo">
+          <span><i class="fas fa-key"></i></span>
+          <input type="password" name="Password" id="password" placeholder="Password" value="">
+        </div>
       </div>
+
+      <div class="grupo-boton">
+        <button id="ingresar">INGRESAR</button>
+      </div>
+
+      <div class="opcion">
+        <h5>O bien ingresas con:</h5>
+        <img class="icono" src="img/fb.png" alt="">
+        <img class="icono" src="img/gmail.png" alt="">
+      </div>
+
+      <div class="registro">
+        <h4>¿No tienes una cuenta? <a href="#/Registrate">Registrate</a></h4>
+      </div>
+
     </div>
-
-    <div class="grupo-boton">
-      <button id="ingresar">INGRESAR</button>
-    </div>
-
-    <div class="opcion">
-      <h5>O bien ingresas con:</h5>
-      <img class="icono" src="img/fb.png" alt="">
-      <img class="icono" src="img/gmail.png" alt="">
-    </div>
-
-    <div class="registro">
-      <h4>¿No tienes una cuenta? <a href="Registrate">Registrate</a></h4>
-    </div>
-  </div>
- </div>
-
-
-<!--fin Login-->
-
   </div>
   <script type="module" src="main.js"></script>
 </body>
+
 </html>
