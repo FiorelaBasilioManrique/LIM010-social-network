@@ -10,6 +10,8 @@
   <!--Iconos-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Tipo letra -->
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +19,7 @@
   <!--Inicio login-->
 
   <div>
-    <img class="fondog" src="img/mundo.png" alt="">
+    <img class="fondog" src="img/fondo.jpg" alt="">
   </div>
 
   <div class="ventana" id="login">
@@ -34,7 +36,7 @@
         <label for="usuario">Email:</label>
         <div class="caja-grupo">
           <span><i class="fas fa-user"></i></span>
-          <input type="text" name="Email" id="correo" placeholder="Email" value="">
+          <input type="text" name="Email" id="correoIngreso" placeholder="Email" value="">
         </div>
       </div>
 
@@ -42,7 +44,7 @@
         <label id="clavecon">Password:</label>
         <div class="caja-grupo">
           <span><i class="fas fa-key"></i></span>
-          <input type="password" name="Password" id="password" placeholder="Password" value="">
+          <input type="password" name="Password" id="passwordIngreso" placeholder="Password" value="">
         </div>
       </div>
 
@@ -57,11 +59,25 @@
       </div>
 
       <div class="registro">
-        <h4>¿No tienes una cuenta? <a href="#/Registrate">Registrate</a></h4>
+        <h4>¿No tienes una cuenta? <a id="registroCuenta" href="#/Registrate">Registrate</a></h4>
       </div>
+    </div>
+  </div>
+
+  <div id="segundaPantalla" class="hide">
+    <form id="registrate">
+      <h1 class="letra">Registrar</h1>
+      <input type="text" name="Nombre" id="nombre" placeholder="Nombre" value="">
+      <input type="email" name="Correo" id="correo" placeholder="Correo" value="">
+      <input type="password"  name="Password" id="password" placeholder="Contraseña" value="">
+      <button id="registro" class="registroCorreo">Registrar</button>
+    </form>
+    <div id="error">
 
     </div>
   </div>
+
+  <script type="module" src="./lib/index.js"></script>
   <script type="module" src="main.js"></script>
 </body>
 
