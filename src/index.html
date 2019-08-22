@@ -15,10 +15,8 @@
 </head>
 
 <body>
-
-  <!--Inicio login-->
-
-  <div>
+ <!-- Inicio login -->
+  <div id="fondo">
     <img class="fondog" src="img/fondo.jpg" alt="">
   </div>
 
@@ -64,8 +62,11 @@
     </div>
   </div>
 
+  <!-- Fin login -->
+
+  <!-- Registro -->
   <div id="segundaPantalla" class="hide">
-    <form id="registrate">
+    <form id="registrate"  class="registrate">
       <h1 class="letra">Registrar</h1>
       <input type="text" name="Nombre" id="nombre" placeholder="Nombre" value="">
       <input type="email" name="Correo" id="correo" placeholder="Correo" value="">
@@ -75,6 +76,12 @@
     <div id="error">
 
     </div>
+  </div>
+  <!-- Fin Registro -->
+
+  <div id="publicaciones">
+    <div id="bienvenida"></div>
+    <div id="bienvenidaCorreo"></div>
   </div>
 
   <script type="module" src="./lib/index.js"></script>

@@ -38,11 +38,7 @@ body{
 
 @media only screen and (max-width: 764px){
   .fondog{
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    margin-top: 10px;
-    margin-left: 200px;
+    display: none;
   }
 }
 
@@ -64,12 +60,12 @@ body{
   box-shadow: 25px, 24px 24px -9px rgba(0, 0, 0, 0.75);
 }
 
-@media only screen and (max-width: 764px){
+@media only screen and (max-width: 1024px){
   .ventana{
-      width: 60%;
-      margin: 5% 0 5% 0;
-      margin-top: 180px;
-      margin-right: 800px;
+    width: 60%;
+    margin: 0% 0 0% 0;
+    margin-right: 50px;
+    
   }
 }
 
@@ -217,7 +213,7 @@ input:focus{
 
 /* Registro */
 
-#registrate{
+.registrate{
   position: absolute;
   right: 280px;
   top: 120px;
@@ -228,7 +224,16 @@ input:focus{
   border-radius: 10px;
 }
 
-#registrate input{
+@media only screen and (max-width: 1024px){
+  .registrate{
+    width: 60%;
+    margin: 5% 0 5% 0;
+    margin-right:10px;
+    
+  }
+}
+
+.registrate input{
   padding: 16px;
   margin: 5px 0;
   width: 176px;
