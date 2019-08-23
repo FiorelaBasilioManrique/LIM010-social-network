@@ -12,6 +12,7 @@ const error = document.getElementById('error');
 const ingresar = document.getElementById('ingresar');
 const publicaciones = document.getElementById('publicaciones');
 const fondo = document.getElementById('fondo');
+const mensaje = document.getElementById('mensaje');
 
 // Almacenar datos 
 let datos = [];
@@ -55,8 +56,9 @@ registro.addEventListener('click', (e) => {
     login.classList.remove('hide');
 
   } else {
-    error.innerHTML = 'correo no son validos';
-  }
+    error.innerHTML='El correo no es válido'
+    error.value='';
+    }
 
 });
 
@@ -76,7 +78,7 @@ registro.addEventListener('click', (e) => {
         bienvenida.innerHTML = datosLocal[i].user;
         bienvenidaCorreo.innerHTML = datosLocal[i].email;
       } else {
-        alert('correo o contraseña incorrectos');
+        mensaje.innerHTML= 'correo o contraseña incorrectos';
       }
     }
 });
