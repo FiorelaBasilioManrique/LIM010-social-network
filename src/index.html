@@ -15,12 +15,12 @@
 </head>
 
 <body>
- <!-- Inicio login -->
+  <!-- Inicio login -->
   <div id="fondo">
     <img class="fondog" src="img/fondo.jpg" alt="">
   </div>
 
-  <div  id="login" class="ventana">
+  <div id="login" class="ventana">
     <img class="logo galerias-principa" src="img/logo.png" alt="">
 
 
@@ -66,21 +66,52 @@
 
   <!-- Registro -->
   <div id="segundaPantalla" class="hide">
-    <form id="registrate"  class="registrate">
+    <form id="registrate" class="registrate">
       <h1 class="letra">Registrar</h1>
       <span id="error" class="mensaje"></span>
       <input type="text" name="Nombre" id="nombre" placeholder="Nombre" value="">
       <input type="email" name="Correo" id="correo" placeholder="Correo" value="">
-      <input type="password"  name="Password" id="password" placeholder="Contraseña" value="">
+      <input type="password" name="Password" id="password" placeholder="Contraseña" value="">
       <button id="registro" class="registroCorreo">Registrar</button>
     </form>
   </div>
   <!-- Fin Registro -->
 
-  <div id="publicaciones">
-    <div id="bienvenida"></div>
-    <div id="bienvenidaCorreo"></div>
-  </div>
+  <!-- Publicaciones -->
+
+  <div id="publicaciones" class="container">
+    <!-- <nav class="cabezera">
+      <ul>
+          <a href="#"><li class="botones">Boton1</li></a>
+      </ul>
+    </nav> -->
+    <div id="bienvenida" class="nombres"></div>
+    <div id="bienvenidaCorreo" class="nombres"></div>
+
+    <div class="row" id="publicar"> 
+      <div class="col-6">
+        <form class="border border-info p-2" id="form">
+        <h2>Publicación</h2>
+        <div class="form-group">
+          <label><i class="fas fa-user"></i>Post</label>
+          <input type="text" required autocomplete="off" class="form-control" id="name" placeholder="Publicar" >
+        </div>
+          <button type="submit" class="btn btn-primary"><i class="fas fa-plus-circle"></i>Publicar</button>
+        </form>
+        </div>
+
+        <div class="col">
+          <div class="user" ></div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  <!-- Fin Publicaciones -->
 
   <script type="module" src="./lib/index.js"></script>
   <script type="module" src="main.js"></script>

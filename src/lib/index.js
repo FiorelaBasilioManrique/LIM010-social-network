@@ -3,7 +3,6 @@
 //   // aqui tu codigo
 // };
 
-
 const login = document.getElementById('login');
 const registroCuenta =document.getElementById('registroCuenta');
 const segundaPantalla = document.getElementById('segundaPantalla');

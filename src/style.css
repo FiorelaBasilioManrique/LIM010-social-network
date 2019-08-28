@@ -269,3 +269,18 @@ input:focus{
   margin-top: 100px;
   text-align: center;
 }
+
+
+/* Segunda Pantalla */
+
+/* .cabezera{
+  background-color: rgb(59, 59, 59);
+  width: 500%;
+  height: 50px;
+  position: fixed;
+  right: 0px;
+} */
+
+.nombres{
+  color: black;
+}
