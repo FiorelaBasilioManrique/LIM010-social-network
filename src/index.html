@@ -34,7 +34,7 @@
         <label for="usuario">Email:</label>
         <div class="caja-grupo">
           <span><i class="fas fa-user"></i></span>
-          <input type="text" name="Email" id="correoIngreso" placeholder="Email" value="">
+          <input class="caja" type="text" name="Email" id="correoIngreso" placeholder="Email" value="">
         </div>
       </div>
 
@@ -42,7 +42,7 @@
         <label id="clavecon">Password:</label>
         <div class="caja-grupo">
           <span><i class="fas fa-key"></i></span>
-          <input type="password" name="Password" id="passwordIngreso" placeholder="Password" value="">
+          <input class="caja" type="password" name="Password" id="passwordIngreso" placeholder="Password" value="">
         </div>
       </div>
 
@@ -78,34 +78,36 @@
   <!-- Fin Registro -->
 
   <!-- Publicaciones -->
+  <nav class="cabezera hide" id="encabezado">
+    <ul>
+      <a href="#/">
+        <li class="botones" id="bienvenida"></li>
+      </a>
+    </ul>
+
+    <!-- <ul>
+      <li class="imagenesLogo"><img src="img/logo.png" width="80"></li>
+  </ul> -->
+
+  </nav>
 
   <div id="publicaciones" class="container">
-    <!-- <nav class="cabezera">
-      <ul>
-          <a href="#"><li class="botones">Boton1</li></a>
-      </ul>
-    </nav> -->
-    <div id="bienvenida" class="nombres"></div>
-    <div id="bienvenidaCorreo" class="nombres"></div>
 
-    <div class="row" id="publicar"> 
-      <div class="col-6">
-        <form class="border border-info p-2" id="form">
-        <h2>Publicación</h2>
-        <div class="form-group">
-          <label><i class="fas fa-user"></i>Post</label>
-          <input type="text" required autocomplete="off" class="form-control" id="name" placeholder="Publicar" >
-        </div>
-          <button type="submit" class="btn btn-primary"><i class="fas fa-plus-circle"></i>Publicar</button>
-        </form>
-        </div>
+    <!-- Cuadro de informacion usuario -->
+    <div id="publicar" class="publicarNombre hide" > 
+        <div class="imagenesD"><img class="logotipo" src="img/logo1.png"></div>
+        <img class="usuario" src="img/usuario.png" alt="">
+        <div id="bienvenidaDos" class="nombreDos"></div>
+        <div id="bienvenidaCorreo" class="correo"></div>
+    </div> 
 
-        <div class="col">
-          <div class="user" ></div>
-        </div>
-      </div>
+    <!-- Post -->
 
-    </div>
+    <!-- <div>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div> -->
+
+  </div>
 
 
 

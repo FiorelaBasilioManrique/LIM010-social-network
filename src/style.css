@@ -6,13 +6,13 @@
 }
 
 body{
-  background: url(img/pantalla.jpg); 
+  /* background: url(img/pantalla.jpg);  */
   background-repeat: no-repeat;
   background-position: center; 
   background-attachment: fixed;
   background-size: cover;
 
-  background-color: rgb(216, 216, 219);
+  background-color: #c7f0db;
   margin: 0px;
   padding: 0px;
   width: 50%;
@@ -29,9 +29,9 @@ body{
   height: 100%;
   margin-top: 20%;
   border-radius: 20px;
-  -webkit-box-shadow: 14px 13px 29px -6px rgba(0,0,0,0.75);
-  -moz-box-shadow: 14px 13px 29px -6px rgba(0,0,0,0.75);
-  box-shadow: 14px 13px 29px -6px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 14px 14px 29px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 14px 14px 29px -6px rgba(0,0,0,0.75);
+  box-shadow: 14px 14px 29px -6px rgba(0,0,0,0.75);
   transition: all 1s;
 }
 
@@ -45,7 +45,7 @@ body{
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: rgba(54, 180, 142, 0.596);
+  background: #8aae9281;
   border-radius: 10px;
   padding: 17px;
   width: 400px;
@@ -113,15 +113,15 @@ body{
 
 }
 
-input{
+.caja{
   width: 100%;
   padding: 12px 20px;
   outline: none;
-  background: rgba(57, 57, 59, 0.431);
+  background:#6f707080;
   color: white;
 }
 
-input:focus{
+.caja:focus{
   border: 2px solid rgb(0, 136, 109);
 }
 
@@ -147,9 +147,9 @@ input:focus{
   border: 2px solid #224e2c;
   cursor: pointer;
 
-  -webkit-box-shadow: 14px 13px 29px -6px rgba(0,0,0,0.75);
-  -moz-box-shadow: 14px 13px 29px -6px rgba(0,0,0,0.75);
-  box-shadow: 14px 13px 29px -6px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 14px 14px 29px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 14px 14px 29px -6px rgba(0,0,0,0.75);
+  box-shadow: 14px 14px 29px -6px rgba(0,0,0,0.75);
   transition: all 1s;
 }
 
@@ -273,14 +273,69 @@ input:focus{
 
 /* Segunda Pantalla */
 
-/* .cabezera{
-  background-color: rgb(59, 59, 59);
-  width: 500%;
-  height: 50px;
-  position: fixed;
-  right: 0px;
-} */
+nav{
+  position: relative;
+  margin:0px auto;
+  width: 1366px;
+  height: 48px;
+  background-color: rgb(38, 38, 39);
+}
 
-.nombres{
+.botones{
+  color: white;
+  margin: 0.8%;
+  
+}
+
+a{
+  text-decoration: none;
+  font-size:20px;
+}
+
+.imagenesLogo{
+  text-align: center;
+  margin: 0px;
+}
+
+.publicarNombre{
+  margin-top: 10px;
   color: black;
+
+  border-style: solid; 
+  border-width: 4px;
+  width: 70%;
+  height: 270px;
+}
+
+.imagenesD{
+  background-color: black;
+  width: 100%;
+  height: 115px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.logotipo{
+  top: 0%;
+  width:50%;
+  height: 140px;
+}
+
+.usuario{
+  margin-top: 10px;
+  width: 25%;
+  height: 80px;
+  margin-left: 37%;
+}
+
+.nombreDos{
+  margin-top: 4px;
+  text-align-last: center;
+  font-size: 20px;
+}
+
+.correo{
+  margin-top: 4px;
+  text-align-last: center;
+  font-size: 20px;
 }
